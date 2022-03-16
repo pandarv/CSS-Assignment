@@ -34,8 +34,22 @@ h3 {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
 a {
+  font-size: 1rem;
   text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+small {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
 .container {
@@ -99,8 +113,10 @@ header ul {
 header ul li {
   position: relative;
 }
- nav a {
+ 
+nav a {
   display: inline-block;
+  font-size: 1.2rem;
   color: hsla(var(--ch-supreme-light));
   padding: 0.4rem 1.2rem;
 }
@@ -109,7 +125,7 @@ header ul li {
 
 .hero-content {
   height: 100vh;
-  width: calc(100vw - 2rem);
+  width: 100vw;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -123,3 +139,27 @@ header ul li {
 }
 
 
+/* -------------------------
+        Footer
+ ------------------------- */
+ footer {
+  background-color: hsla(var(--ch-dark));
+  text-align: center;
+}
+
+footer small {
+  color: hsla(var(--bg-color));
+}
+
+footer div > ul {
+  gap: 3rem;
+}
+
+footer div.flex.flex-col {
+  padding-block-start: 1.5rem;
+  gap: 1rem;
+}
+
+footer p {
+  margin-block-start: 2.5rem;
+}
