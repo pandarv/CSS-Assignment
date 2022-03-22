@@ -1,8 +1,8 @@
 :root {
   --bg-color: 240, 100%, 99%;
   --ch-dark: 235, 83%, 25%;
-  --ch-medium: 235, 45%, 64%
-  --ch-light: 236, 42%, 75%
+  --ch-medium: 235, 45%, 64%;
+  --ch-light: 236, 42%, 75%;
   --ch-med-light: 235, 48%, 90%;
   --ch-extra-light: 235, 65%, 85%;
   --ch-supreme-light: 235, 100%, 98%;
@@ -38,13 +38,13 @@ p {
   font-size: 1rem;
   letter-spacing: 1.5px;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 a {
   font-size: 1rem;
   text-decoration: none;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 small {
@@ -70,10 +70,9 @@ small {
 
 .btn {
   display: inline-block;
-  padding-block: .5rem;
+  padding-block: 0.5rem;
   padding-inline: 1rem;
   border: 2px solid hsla(var(--logo-color));
-
 }
 
 /* -------------------------
@@ -82,7 +81,7 @@ small {
 /* Navigation */
 
 header {
-  background-color: hsl(0, 0%, 0%, 0.3);
+  background-color: hsla(0, 0%, 0%, 0.3);
   background-image: url(../img/todd-quackenbush-x5SRhkFajrA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,6 +93,7 @@ header {
 .logo {
   padding-block-start: max(1rem, 0.5rem);
 }
+
 .logo a {
   font-size: 3rem;
   color: hsla(var(--logo-color));
@@ -103,6 +103,7 @@ header {
   background-color: hsla(var(--ch-dark), 0.5);
   padding-block: 0.5rem;
   position: fixed;
+  /* left: 0; */
   width: 100%;
 }
 header ul {
@@ -113,19 +114,20 @@ header ul {
 header ul li {
   position: relative;
 }
- 
-nav a {
+
+nav ul a {
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: hsla(var(--ch-supreme-light));
   padding: 0.4rem 1.2rem;
+  text-transform: uppercase;
 }
 
 /* Hero Content */
 
 .hero-content {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0 auto;
   gap: 2rem;
 }
@@ -138,11 +140,10 @@ nav a {
   color: hsla(var(--ch-supreme-light));
 }
 
-
 /* -------------------------
         Footer
  ------------------------- */
- footer {
+footer {
   background-color: hsla(var(--ch-dark));
   text-align: center;
 }
@@ -162,4 +163,26 @@ footer div.flex.flex-col {
 
 footer p {
   margin-block-start: 2.5rem;
+}
+
+/* -------------------------
+    Home - Main 
+ ------------------------- */
+
+/* Order Online Section */
+
+.order {
+  padding: 3rem 2rem;
+  gap: 4rem;
+}
+
+.order-content h4 {
+  margin-bottom: 1.5rem;
+}
+main .order-content {
+  flex-basis: 60%;
+}
+main .order-button {
+  /* width: 50%; */
+  flex-basis: 40%;
 }
