@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: hsla(var(--bg-color));
 }
 
 /* Utilities */
@@ -34,11 +34,15 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  margin-block-end: 1.5rem;
+}
+
 p {
   font-size: 1rem;
   letter-spacing: 1.5px;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-block-end: 1rem;
 }
 
 a {
@@ -50,6 +54,11 @@ a {
 small {
   font-size: 0.8rem;
   letter-spacing: 2px;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .container {
@@ -68,6 +77,14 @@ small {
   gap: 0.5rem;
 }
 
+.flex-bas-60 {
+  flex-basis: 60%;
+}
+
+.flex-bas-40 {
+  flex-basis: 40%;
+}
+
 .btn {
   display: inline-block;
   padding-block: 0.5rem;
@@ -78,6 +95,7 @@ small {
 /* -------------------------
         Header
  ------------------------- */
+
 /* Navigation */
 
 header {
@@ -163,26 +181,120 @@ footer div.flex.flex-col {
 
 footer p {
   margin-block-start: 2.5rem;
+  margin-block-end: 0;
 }
 
 /* -------------------------
     Home - Main 
  ------------------------- */
-
-/* Order Online Section */
-
-.order {
-  padding: 3rem 2rem;
-  gap: 4rem;
+main {
+  padding-block: 4rem;
+  display: grid;
+  /* grid-template-columns: repeat(3, minmax(auto, 400px)); */
+  grid-template-columns: minmax(250px, 400px) 1fr minmax(250px, 400px);
+  grid-template-rows: minmax(250px, 400px) repeat(2, minmax(50vh, 1fr));
+  /* grid-template-rows: repeat(3, minmax(50vh, 1fr)); */
+  column-gap: 2rem;
+  row-gap: 4rem;
+  /* align-items: center;
+  justify-items: center; */
 }
 
-.order-content h4 {
-  margin-bottom: 1.5rem;
+.order-content {
+  grid-column: 1 / 3;
+  padding-block: 2rem;
+  padding-inline-start: 0.8rem;
 }
-main .order-content {
-  flex-basis: 60%;
+.order-button {
+  align-self: center;
+  /* justify-self: center; */
+  grid-column: 3 / 4;
 }
-main .order-button {
-  /* width: 50%; */
-  flex-basis: 40%;
+
+.intro-img,
+.chefs-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.intro-img {
+  background-image: url(/src/img/kabir-cheema-8T9AVksyt7s-unsplash.jpg);
+
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  /* overflow: hidden; */
+}
+
+/* .intro-img {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  overflow: hidden;
+} */
+
+/* .intro-img img {
+  object-fit: cover;
+} */
+
+.intro-content {
+  padding-block: 2rem;
+  padding-inline-end: 0.8rem;
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+}
+
+.chefs-content {
+  padding-block: 2rem;
+  padding-inline-start: 0.8rem;
+  grid-column: 1 / 3;
+  grid-row: 3 / -1;
+}
+
+.chefs-img {
+  background-image: url(/src/img/clicker-babu-3FokIYw6L4A-unsplash.jpg);
+  /* overflow: hidden; */
+  grid-column: 3 / 4;
+}
+
+/* .chefs-img img {
+  object-fit: cover;
+  max-height: fit-content;
+} */
+
+/* -------------------------
+    @ Media 
+ ------------------------- */
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0;
+  }
+  .order-content {
+    grid-row: 1 / 2;
+  }
+  .order-button {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .intro-content {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .intro-img {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .chefs-content {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+  .chefs-img {
+    grid-column: 1 / 2;
+    grid-row: 6 / -1;
+  }
 }
