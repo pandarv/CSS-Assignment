@@ -7,6 +7,8 @@
   --ch-extra-light: 235, 65%, 85%;
   --ch-supreme-light: 235, 100%, 98%;
   --logo-color: 25, 82%, 49%;
+
+  scroll-behavior: smooth;
 }
 
 * {
@@ -193,7 +195,7 @@ footer p {
 }
 
 /* -------------------------
-      Home - Main 
+      menu - Main 
    ------------------------- */
 .menu-item {
   padding-inline: 1rem;

@@ -1,0 +1,258 @@
+:root {
+  --bg-color: 235, 100%, 99%;
+  --ch-dark: 235, 83%, 25%;
+  --ch-medium: 235, 45%, 64%;
+  --ch-light: 236, 42%, 75%;
+  --ch-med-light: 235, 48%, 90%;
+  --ch-extra-light: 235, 65%, 85%;
+  --ch-supreme-light: 235, 100%, 98%;
+  --logo-color: 25, 82%, 49%;
+}
+
+* {
+  /* 240, 100%, 99% */
+  font-family: "Josefin Sans", "Avenir", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  background-color: hsla(var(--bg-color));
+}
+
+/* Utilities */
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  margin-block-end: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  margin-block-end: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+small {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex-bas-60 {
+  flex-basis: 60%;
+}
+
+.flex-bas-40 {
+  flex-basis: 40%;
+}
+
+.btn {
+  display: inline-block;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border: 2px solid hsla(var(--logo-color));
+}
+
+/* -------------------------
+            Header
+     ------------------------- */
+
+/* Navigation */
+
+header {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  background-image: url(../img/todd-quackenbush-x5SRhkFajrA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.logo {
+  padding-block-start: max(1rem, 0.5rem);
+}
+
+.logo a {
+  font-size: 3rem;
+  color: hsla(var(--logo-color));
+}
+
+.navbar {
+  background-color: hsla(var(--ch-dark), 0.5);
+  padding-block: 0.5rem;
+  position: fixed;
+  /* left: 0; */
+  width: 100%;
+}
+header ul {
+  list-style: none;
+  gap: 0.5rem;
+}
+
+header ul li {
+  position: relative;
+}
+
+nav ul a {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: hsla(var(--ch-supreme-light));
+  padding: 0.4rem 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Hero Content */
+
+.hero-content {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hero-content h1 {
+  color: hsla(var(--ch-extra-light));
+  text-align: center;
+}
+.hero-content a {
+  color: hsla(var(--ch-supreme-light));
+}
+
+/* -------------------------
+            Footer
+     ------------------------- */
+footer {
+  background-color: hsla(var(--ch-dark));
+  text-align: center;
+}
+
+footer small {
+  color: hsla(var(--bg-color));
+}
+
+footer div > ul {
+  gap: 3rem;
+}
+
+footer .social-icon {
+  font-size: 2rem;
+  color: hsla(var(--ch-medium));
+}
+
+footer div.flex.flex-col {
+  padding-block-start: 3rem;
+  gap: 2rem;
+}
+
+footer p {
+  margin-block-start: 2.5rem;
+  margin-block-end: 0;
+  padding-block-end: 0.4rem;
+}
+
+/* -------------------------
+        events - Main 
+     ------------------------- */
+main h4 {
+  font-weight: 700;
+}
+.gallery > .grid-gal {
+  padding-block: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* justify-content: center; */
+  gap: 1rem;
+}
+
+.grid-gal > figure {
+  aspect-ratio: 1 / 1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-gal > figure img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+/* .banquet > div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+} */
+
+.banquet1 {
+  /* grid-row: 1 / 2; */
+  /* background-image: url(/src/img/Banquett/abby-savage-zNsSwsuyP3A-unsplash.jpg); */
+}
+.banquet2 {
+  /* grid-row: 2 / 3; */
+  /* background-image: url(/src/img/Banquett/alessia-cocconi-vf8vmRXy3Jk-unsplash.jpg); */
+}
+.banquet3 {
+  /* grid-row: 3 / 4; */
+  /* background-image: url(/src/img/Banquett/andra-c-taylor-jr-Qd-lPUtupYA-unsplash.jpg); */
+}
+.banquet4 {
+  /* grid-row: 4 / 5; */
+  /* background-image: url(/src/img/Banquett/brett-jordan-7aygbuJpgxE-unsplash.jpg); */
+}
+.banquet5 {
+  /* grid-row: 5 / 6; */
+  /* background-image: url(/src/img/Banquett/hannah-busing-URVe89DA5Cw-unsplash.jpg); */
+}
+.banquet6 {
+  /* grid-row: 6 / 7; */
+  /* background-image: url(/src/img/Banquett/jeremy-wong-weddings-K8KiCHh4WU4-unsplash.jpg); */
+}
+
+/* -------------------------
+        @ Media 
+     ------------------------- */
