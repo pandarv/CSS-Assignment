@@ -1,14 +1,5 @@
 @import "main.css";
 
-header {
-  background-color: hsla(0, 0%, 0%, 0.35);
-  background-image: url(../img/helena-lopes-QpjyqYy5R-U-unsplash.jpg);
-}
-
-/* ---------------------
-Main
---------------------- */
-
 main {
   padding-block: 6rem;
   padding-inline: 0.5rem;

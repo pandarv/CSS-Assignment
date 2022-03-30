@@ -1,0 +1,98 @@
+@import "main.css";
+
+/* -------------------------
+    Home - Main 
+------------------------- */
+
+main {
+  padding-block: 6rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 5rem repeat(4, 1fr);
+  gap: 4rem;
+}
+.order-content,
+.intro-content,
+.chefs-content {
+  margin-block-end: 4rem;
+  padding-inline: 0.8rem;
+  padding-block: 2rem;
+}
+
+.order-content {
+  margin-block-end: 0;
+}
+
+.order-content {
+  grid-row: 1 / 2;
+}
+.about-btn {
+  text-align: center;
+  margin-block-start: 2rem;
+}
+.order-button {
+  justify-self: center;
+  grid-row: 2 / 3;
+}
+.intro-img,
+.chefs-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.intro-img {
+  background-image: url(../img/kabir-cheema-8T9AVksyt7s-unsplash.jpg);
+  grid-row: 3 / 4;
+}
+.intro-content {
+  grid-row: 4 / 5;
+}
+.chefs-img {
+  /* background-image: url(../img/clicker-babu-3FokIYw6L4A-unsplash.jpg); */
+  background-image: url(../img/petr-sevcovic-HzDF-rxlSeM-unsplash.jpg);
+  grid-row: 5 / 6;
+}
+.chefs-content {
+  grid-row: 6 / -1;
+}
+
+/* -------------------------
+    @ Media 
+------------------------- */
+
+@media screen and (min-width: 769px) {
+  main {
+    grid-template-columns: minmax(250px, 400px) 1fr minmax(250px, 400px);
+    grid-template-rows: minmax(250px, 300px) repeat(2, minmax(50vh, 1fr));
+    column-gap: 2rem;
+    row-gap: 4rem;
+  }
+  .order-content {
+    grid-column: 1 / 3;
+  }
+  .order-button {
+    align-self: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .intro-img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .intro-content {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+  }
+  .chefs-content {
+    padding-inline-start: 0.8rem;
+    grid-column: 1 / 3;
+    grid-row: 3 / -1;
+  }
+  .chefs-img {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}

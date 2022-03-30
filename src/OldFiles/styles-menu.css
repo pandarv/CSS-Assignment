@@ -1,19 +1,10 @@
 @import "main.css";
-
-/* Hero image */
-
-header {
-  background-color: hsla(0, 0%, 0%, 0.35);
-  background-image: url(../img/aditya-joshi-uWI48cpw7Vo-unsplash.jpg);
-}
-
 /* -------------------------
       menu - Main 
 ------------------------- */
 
 main {
   padding-block: 6rem;
-  padding-inline: 0.5rem;
 }
 
 main article {

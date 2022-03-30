@@ -48,7 +48,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
   line-height: 1.5;
   margin-block-end: 1rem;
 }
@@ -93,10 +93,6 @@ img {
   flex-basis: 40%;
 }
 
-.highlight-color {
-  color: hsla(var(--logo-color));
-}
-
 .btn {
   display: inline-block;
   color: hsla(var(--ch-dark));
@@ -136,9 +132,7 @@ header {
 }
 
 .logo a {
-  font-family: "Mrs Sheppards", cursive;
   font-size: 3rem;
-  letter-spacing: 3px;
   color: hsla(var(--logo-color));
 }
 
@@ -207,16 +201,6 @@ nav ul a.current::after {
   color: hsla(var(--ch-extra-light));
   text-align: center;
 }
-
-.hero-content h3 {
-  color: hsla(var(--ch-extra-light));
-  text-align: center;
-  max-width: 80%;
-  text-transform: uppercase;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
 .hero-content a {
   color: hsla(var(--ch-supreme-light));
 }
