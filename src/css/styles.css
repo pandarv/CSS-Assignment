@@ -1,5 +1,10 @@
 @import "main.css";
 
+header {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  background-image: url(../img/todd-quackenbush-x5SRhkFajrA-unsplash.jpg);
+}
+
 /* -------------------------
     Home - Main 
 ------------------------- */
@@ -18,6 +23,10 @@ main {
   margin-block-end: 4rem;
   padding-inline: 0.8rem;
   padding-block: 2rem;
+}
+
+.order-content a {
+  color: hsl(var(--logo-color));
 }
 
 .order-content {
@@ -43,6 +52,8 @@ main {
   height: 100%;
   width: 100%;
 }
+
+/* Images (A) */
 .intro-img {
   background-image: url(../img/kabir-cheema-8T9AVksyt7s-unsplash.jpg);
   grid-row: 3 / 4;
