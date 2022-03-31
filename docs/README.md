@@ -2,6 +2,8 @@
 
 # Info about the website.
 
+- Logo is linked to Home page.
+
 - Chatori is a made up website which can be used by a Food Blog / Blogger or a kitchen chef or restaurant. This website is created as a WebDev assignment.
 
 - All the images used in this website are downloaded from Unsplash. According to Unsplash website, the photograph's can be used freely without any permission to download and use for business or non-business purpose; however, Unsplash request for the acknowledgment. Unsplash doesn't allow to sell without good alterations, which includes Unsplash photograph compilation and duplicate a similar or competing service.
