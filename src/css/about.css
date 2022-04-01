@@ -2,18 +2,13 @@
 
 /* Images (A) */
 header {
-  background-color: hsla(0, 0%, 0%, 0.35);
+  /* background-color: hsla(0, 0%, 0%, 0.35); */
   background-image: url(../img/helena-lopes-QpjyqYy5R-U-unsplash.jpg);
 }
 
 /* ---------------------
 Main
 --------------------- */
-
-main {
-  padding-block: 6rem;
-  padding-inline: 0.5rem;
-}
 
 main section:first-child {
   margin-block-end: 6rem;
@@ -65,7 +60,7 @@ main .aditya {
     padding-inline: 0.75rem;
     display: flex;
     align-items: center;
-    background-color: hsla(var(--ch-supreme-light), 70%);
+    background-color: hsla(var(--ch-supreme-light), 85%);
     /* background-blend-mode: luminosity; */
     color: hsla(var(--ch-dark));
 
@@ -73,6 +68,6 @@ main .aditya {
     grid-column: 3 / -1;
     grid-row: 2 / 3;
 
-    box-shadow: 0.1rem 0.1rem 2rem hsl(var(--ch-dark), 20%);
+    box-shadow: 0.1rem 0.1rem 2rem hsl(var(--ch-dark), 10%);
   }
 }

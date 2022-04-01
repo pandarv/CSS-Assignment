@@ -11,7 +11,7 @@
 
 /*  Font (B) */
 * {
-  font-family: "Josefin Sans", "Avenir", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -23,6 +23,11 @@ body {
 }
 
 /* Utilities */
+main {
+  padding-block: 8rem;
+  padding-inline: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -126,6 +131,7 @@ img {
 /* Images (A) */
 
 header {
+  background-color: hsla(0, 0%, 0%, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -134,19 +140,14 @@ header {
 }
 
 .logo {
-  padding-block-start: max(1rem, 0.5rem);
-}
-
-.logo a {
-  font-family: "Mrs Sheppards", cursive;
-  font-size: 3rem;
-  letter-spacing: 3px;
-  color: hsla(var(--logo-color));
+  width: 12rem;
+  padding-block: 0.5rem;
+  /* margin-inline: auto; */
 }
 
 /* Selectors (F) */
 .navbar {
-  background-color: hsla(var(--ch-dark), 0.5);
+  background-color: hsla(var(--ch-dark), 0.8);
   padding-block: 0.5rem;
   position: fixed;
   /* left: 0; */
@@ -204,7 +205,7 @@ nav ul a.current::after {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 
 .hero-content h1 {
@@ -223,6 +224,24 @@ nav ul a.current::after {
 
 .hero-content a {
   color: hsla(var(--ch-supreme-light));
+}
+
+/* .hero-content a #main {
+  display: inline-block;
+} */
+.down-arrow {
+  display: block;
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  /* height: 10rem; */
+  border-bottom: 0.8rem solid hsla(var(--ch-medium), 40%);
+  border-right: 0.8rem solid hsla(var(--ch-medium), 40%);
+  /* border-bottom-right-radius: 12px; */
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 5%;
+  left: calc(50% - 2.5rem);
 }
 
 /* -------------------------

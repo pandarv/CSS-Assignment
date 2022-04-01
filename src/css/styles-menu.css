@@ -4,18 +4,13 @@
 
 /* Images (A) */
 header {
-  background-color: hsla(0, 0%, 0%, 0.35);
+  /* background-color: hsla(0, 0%, 0%, 0.5); */
   background-image: url(../img/aditya-joshi-uWI48cpw7Vo-unsplash.jpg);
 }
 
 /* -------------------------
       menu - Main 
 ------------------------- */
-
-main {
-  padding-block: 6rem;
-  padding-inline: 0.5rem;
-}
 
 main article {
   margin-block-end: 6rem;

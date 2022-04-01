@@ -1,8 +1,12 @@
 @import "main.css";
 
 header {
-  background-color: hsla(0, 0%, 0%, 0.3);
+  /* background-color: hsla(0, 0%, 0%, 0.5); */
   background-image: url(../img/todd-quackenbush-x5SRhkFajrA-unsplash.jpg);
+}
+
+.hero-content {
+  gap: 2rem;
 }
 
 /* -------------------------
@@ -10,8 +14,6 @@ header {
 ------------------------- */
 
 main {
-  padding-block: 6rem;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 5rem repeat(4, 1fr);

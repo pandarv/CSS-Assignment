@@ -10,17 +10,13 @@
 
 /* Images (A) */
 header {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  /* background-color: hsla(0, 0%, 0%, 0.4); */
   background-image: url(../img/ayrus-hill-QIPpS02wKX4-unsplash.jpg);
 }
 
 /* -------------------------
         events - Main 
 ------------------------- */
-
-main {
-  padding-block: 6rem;
-}
 
 .request-form {
   max-width: 36rem;
@@ -72,9 +68,9 @@ main section:last-child {
 .grid-gal > figure img {
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.7s ease-in;
 }
 
 .grid-gal > figure:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
